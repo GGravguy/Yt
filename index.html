@@ -1,1 +1,59 @@
-Hello Julian and Micheal imagine clicking this
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Good Boy</title>
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("https://media4.giphy.com/media/xThuWcaa4U4XZQDgvm/200w.gif");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    .rainbow-text {
+        font-size: 120px;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+        text-align: center;
+
+        /* Rainbow gradient */
+        background: linear-gradient(
+            90deg,
+            red,
+            orange,
+            yellow,
+            green,
+            blue,
+            indigo,
+            violet
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        /* Bounce animation */
+        animation: bounce 3s ease-in-out infinite;
+    }
+
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-40px);
+        }
+    }
+</style>
+</head>
+
+<body>
+    <div class="rainbow-text">Good Boy</div>
+</body>
+</html>
